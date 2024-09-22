@@ -1,0 +1,661 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.04 [en] (OS/2; I) [Netscape]">
+   <TITLE> EE 6093 Section A Winter 99 Home Page </TITLE>
+</HEAD>
+<BODY>
+&nbsp;
+<H1>
+Communication Networks</H1>
+
+<H3>
+EE 6093 Section A Winter 1999</H3>
+Last Modified Fri Mar&nbsp; 5 17:27:04 EST 1999&nbsp;
+<BR>Report problems to <I><A HREF="mailto:b.mckinnon@ieee.org">b.mckinnon@ieee.org</A></I>
+
+<P>
+<HR>
+<H3>
+General Information</H3>
+From the Georgia Tech Course Catalog:
+
+<P>EE 6093: Communication Networks.
+
+<P>3-0-3. Prerequisites: EE 6050, EE6051 is strongly recommended.
+
+<P>Course Objective: An introductory presentation of queueing theory and
+its application to the performance evaluation of local area networks.
+
+<P>This course will deviate from previous in that a significant amount
+of the course will require knowledge of a high-level programming language
+and the ability write and compile software to validate the theory which
+will be taught in this course.&nbsp; After all, it can be easy to derive
+expressions for any number of quantities, but it is also seems to be beneficial
+for one to see that the derived value is, in fact, what occurs when the
+system (or a simulation thereof) is implemented.&nbsp; While the student
+is allowed to use whatever language is most familiar to them, students
+will be directed to materials which may be useful in the course which use
+"C" and/or "C++" (and, when possible, various dialects of Fortran).&nbsp;
+These skills will be <B><I>required</I></B> in order to complete all problems
+on the take-home exams which will be offered during the quarter.
+
+<P>
+<HR>
+
+<P>Jump to <A HREF="#textbooks">textbook &amp; reference information</A>
+<BR>Jump to <A HREF="#grades">grade distribution information</A>
+<BR>Jump to the <A HREF="#syllabus">syllabus for the quarter</A> (<A HREF="http://www.btc.gatech.edu/~bmck/EE6093/syllabus.ps">download</A>)
+
+<P>Jump to the <A HREF="http://www.ece.gatech.edu/academic/cgi-bin/catalog?ee6093">ECE
+Departmental Web Page</A>
+
+<P>
+<HR>
+
+<P><B>Instructor: <A HREF="http://www.btc.gatech.edu/~bmck">Dr. Bill McKinnon</A></B>
+<UL>
+<LI>
+<B>Office:</B> 248 GCATT (250 14th St.)</LI>
+
+<LI>
+<B>Phone:</B> (404) 894-8806</LI>
+
+<LI>
+<B>Email:</B> <A HREF="mailto:b.mckinnon@ieee.org">b.mckinnon@ieee.org</A>
+or <A HREF="mailto:bill.mckinnon@gtri.gatech.edu">bill.mckinnon@gtri.gatech.edu</A></LI>
+
+<LI>
+<B>Office Hours:</B> Generally open (from 9am until later than I would
+like to admit), but appointments are <I>strongly</I> <I>recommended</I>
+(I won't be held responsible if I am working somewhere else when you "drop
+by")</LI>
+</UL>
+
+<HR>
+<H3>
+<A NAME="textbooks"></A>Textbooks</H3>
+None required; course notes from the Printing and Photographic Services
+are bound and available through the Georgia Tech Bookstore
+
+<P><B>Other References</B>
+
+<P>&nbsp;&nbsp;&nbsp; <I>Telecommunications</I>
+<BR><U>Telecommunication Networks: Protocols, Modeling and Analysis</U>
+by Mischa Schwartz, Addison Wesley, 1988
+<BR><U>Data Networks, 2nd ed.</U> by Dimitri Bertsekas and Robert Gallager,
+Prentice Hall, 1992
+<BR><U>Computer Networks, 2nd ed.</U> by Andrew S. Tanenbaum, Prentice
+Hall, 1989
+
+<P><I>&nbsp;&nbsp;&nbsp; Probability, Random Processes, Queueing Theory,
+and Statistics</I>
+<BR><U>Probability and Random Processes for Electrical Engineers</U> by
+Yannis Viniotis, WCB/McGraw-Hill, 1998
+<BR><U>Probability, Random Variables, and Stochastic Processes, 3rd ed.</U>
+by Athanasios Papoulis, McGraw Hill, 1991
+<BR><U>An Introduction to Probability Theory and Its Applications (vol.
+1), 3rd ed.</U> by William Feller, John Wiley &amp; Sons, 1968
+<BR><U>An Introduction to Probability Theory and Its Applications (vol.
+2), 2nd ed.</U> by William Feller, John Wiley &amp; Sons, 1971
+<BR><U>Queueing Systems, vol. 1: Theory</U> by Leonard Kleinrock, John
+Wiley &amp; Sons, 1975
+<BR><U>Queueing Systems, vol. 2: Computer Applications</U> by Leonard Kleinrock,
+John Wiley &amp; Sons, 1976
+<BR><U>Fundamentals of Queueing Theory, 2nd ed.</U> by Donald Gross and
+Carl M. Harris, John Wiley &amp; Sons, 1985
+<BR><U>The Art of Computer Systems Performance Analysis</U> by Raj Jain,
+John Wiley &amp; Sons, 1991
+
+<P>&nbsp;&nbsp;&nbsp; <I>Software</I>
+<BR><U>Numerical Recipes in C: The Art of Scientific Computing, 2nd ed.</U>
+by William H. Press, William T. Vetterling, Saul A. Teukolsky, and Brian
+P. Flannery, Cambridge University Press, 1992
+<BR><U>Simulation Modeling &amp; Analysis, 2nd ed.</U> by Averill M. Law
+and W. David Kelton, McGraw Hill, 1991
+
+<P>&nbsp;&nbsp;&nbsp; <I>Basic Knowledge of Transform Theory, Linear Algebra,
+and Operations Research helpful</I>
+
+<P><B>Commercial Network Performance (and related) Products</B>
+<BR><A HREF="http://www.makesys.com">Make Systems' NetMaker</A>
+<BR><A HREF="http://www.caciasl.com">CACI's Comnet</A>
+<BR><A HREF="http://www.mil3.com/products/home.html">MIL3's Opnet</A>
+<BR><A HREF="http://www.mesquite.com">Mesquite Software</A>
+<BR><A HREF="http://www.sm.com/sim/arena/default.htm">ARENA</A> (SIMAN)
+<BR><A HREF="http://www.meridian-marketing.com/GPSS_PC/index.html">GPSS/PC</A>
+and <A HREF="http://www.meridian-marketing.com/GPSS_H/index.html">GPSS/H</A>
+<BR>Any information found on the SLAM simulation programming language would
+be appreciated.
+<UL>
+<LI>
+An discussion of several simulation &amp; modeling tools can be found at
+<A HREF="http://www.isoquantic.com/pr/iq-simtools.html">http://www.isoquantic.com/pr/iq-simtools.html</A></LI>
+</UL>
+<B>Software Sites of Interest</B>
+<BR><A HREF="http://www.netlib.org">Netlib</A>
+<BR><A HREF="http://corp.metabyte.com/~fbp/stl/effort.html">STL</A> (Software
+Template Library)
+<BR><A HREF="http://www.cdrom.com">Walnut Creek Software</A> <A HREF="ftp://ftp.cdrom.com">(FTP)</A>
+<BR><A HREF="http://www.nr.com">Numerical Recipes Online</A>
+<BR><A HREF="http://www.cs.dartmouth.edu/gnuplot_info.html">Gnuplot</A>
+<BR><A HREF="http://www.netlib.org/c/meschach">Meschach</A>
+<BR><A HREF="http://math.nist.gov/tnt">TNT</A> by <A HREF="http://math.nist.gov/pozo">Roldan
+Pozo</A>
+<BR><A HREF="http://metalab.unc.edu">MetaLab @ UNC, Chapel Hill</A>
+<BR><A HREF="ftp://prep.ai.mit.edu/pub/gnu">GNU Software Repository @ MIT</A>
+
+<P>More information may be added as the course progresses.
+
+<P>
+<HR>
+<H3>
+<A NAME="grades"></A>Grade Division</H3>
+
+<TABLE BORDER >
+<TR ALIGN=CENTER>
+<TD>&nbsp;</TD>
+
+<TD>% of Grade&nbsp;</TD>
+
+<TD>Distribution Date</TD>
+
+<TD>Notes</TD>
+</TR>
+
+<TR ALIGN=CENTER>
+<TD><B><I><A HREF="http://www.btc.gatech.edu/~bmck/EE6093/exam1.ps">Exam
+1</A></I></B></TD>
+
+<TD>30%</TD>
+
+<TD>Mon 1 Feb 99</TD>
+
+<TD>Take Home Exam</TD>
+</TR>
+
+<TR>
+<TD>
+<CENTER><B><I><A HREF="http://www.btc.gatech.edu/~bmck/EE6093/exam2.ps">Exam
+2</A></I></B></CENTER>
+</TD>
+
+<TD>
+<CENTER>30%</CENTER>
+</TD>
+
+<TD>
+<CENTER>Mon 22 Feb 99</CENTER>
+</TD>
+
+<TD>
+<CENTER>Take Home Exam</CENTER>
+</TD>
+</TR>
+
+<TR ALIGN=CENTER>
+<TD><B><I><A HREF="http://www.btc.gatech.edu/~bmck/EE6093/exam3.ps">Exam
+3</A> <U>or</U></I></B>&nbsp;
+<BR><B><I>Final Exam</I></B>&nbsp;
+<BR><B><I>(required)</I></B></TD>
+
+<TD>40%</TD>
+
+<TD>
+<CENTER>Exam 3:&nbsp;</CENTER>
+
+<CENTER>Mon 8 Mar 99&nbsp;</CENTER>
+
+<CENTER>Final Exam:&nbsp;</CENTER>
+
+<CENTER>Fri 19 Mar 99&nbsp;</CENTER>
+
+<CENTER>8a-1050a</CENTER>
+</TD>
+
+<TD>
+<CENTER>Exam 3 will be a Take Home Exam,&nbsp;</CENTER>
+
+<CENTER>while the Final Exam will be offered&nbsp;</CENTER>
+
+<CENTER>in class at the assigned date and time&nbsp;</CENTER>
+
+<CENTER>(unless otherwise specified).&nbsp;</CENTER>
+
+<CENTER><U>All</U> students (<U>incl. degree candidates</U>)&nbsp;</CENTER>
+
+<CENTER><B><U>must</U></B> take at least one of these two tests.&nbsp;</CENTER>
+
+<CENTER>If both are taken, the greater of the two&nbsp;</CENTER>
+
+<CENTER>grades is applied.</CENTER>
+</TD>
+</TR>
+</TABLE>
+Class attendance is not mandatory.&nbsp; I do not care where you spend
+your time, as long as you get your work done.&nbsp; However, in the same
+breath, notice that I am not tolerant of missed deadlines.&nbsp; Prior
+notification of interviews, etc. and immediate notification of emergency
+situations will be <I>mandatory </I>for rescheduled events.
+
+<P>Homework is not assigned in this class for the same reason.&nbsp; It
+is the responsibility of the student (particularly when in graduate school)
+to learn the material in whatever fashion works for you, such that you
+perform on the examinations.&nbsp; I, as the instructor, am a resource
+who will provide what assistance I can in a manner fair to all of the students
+in the class.
+
+<P>The "(Recommended) Assignments" are not to be turned in and do not even
+necessarily have to completed on the dates assigned.&nbsp; However, they
+provide a reasonable path for the student to develop tools which will be
+required for the examinations' completion.&nbsp; I will not provide debugging
+assistance in using these tools; the students are expected to have the
+skills to put together tools (from whatever source they choose, not necessarily
+those I provide, but possibly including themselves) which will solve the
+problems on the examinations.
+
+<P>Examinations will be distributed via hyperlinks shown in the syllabus.&nbsp;
+These links will be activated just prior to class on the days listed in
+the syllabus.&nbsp; It is the student's responsibility to download the
+exam, print it, and solve the problems.&nbsp; The take-home examinations
+are open book, but are to be solved without any personal assistance from
+other individuals; software used within the examinations should have been
+developed individually or downloaded from <I>public domain sources</I>
+and compiled by the student.&nbsp; An honor code will be attached to each
+examination.&nbsp; In order to preserve fairness in grading the examinations,
+only social security numbers should be used for identification on examinations.&nbsp;
+Academic dishonesty will be dealt with harshly by the instructor.
+
+<P>Examinations are due <U>promptly</U> at 3pm on the date noted in the
+syllabus below; any exams turned in within 10 minutes of the start of class
+will have 20% of their grade deducted for being late.&nbsp; No exams will
+be accepted after that time.&nbsp; Finally, exam grades are non-negotiable
+(i.e., "binding") at 5pm on the days indicated in the syllabus below (i.e.,
+one week after they are returned).
+
+<P>
+<HR>
+<BR><A NAME="syllabus"></A>
+<H3>
+Syllabus</H3>
+This online syllabus will be constantly updated as the quarter progresses.
+It is the student's responsibility to regularly check the syllabus for
+updates.
+<BR>&nbsp;
+<TABLE BORDER WIDTH="100%" NOSAVE >
+<TR>
+<TD>Week #, Date</TD>
+
+<TD>#</TD>
+
+<TD>
+<CENTER>Lecture Topics&nbsp;</CENTER>
+
+<CENTER>&amp; Notes</CENTER>
+</TD>
+
+<TD>
+<CENTER>Events</CENTER>
+</TD>
+
+<TD>
+<CENTER><A HREF="http://www.btc.gatech.edu/~bmck/EE6093/asnreqmt.html">(Recommended)</A>&nbsp;</CENTER>
+
+<CENTER><A HREF="http://www.btc.gatech.edu/~bmck/EE6093/asnreqmt.html">Assignments</A></CENTER>
+</TD>
+</TR>
+
+<TR>
+<TD><B>W1</B>, Wed 6 Jan 99</TD>
+
+<TD>1</TD>
+
+<TD>Introduction &amp; Syllabus;&nbsp;
+<BR>Motivation for&nbsp;
+<BR>Queueing Theory&nbsp;
+<BR>(Ch. 2 of notes and&nbsp;
+<BR><A HREF="http://www.btc.gatech.edu/~bmck/EE6093/l1.ps">download notes</A>)</TD>
+
+<TD></TD>
+
+<TD><A HREF="http://www.btc.gatech.edu/~bmck/EE6093/asnreqmt.html#asnmt1">(Pseudo-)Random&nbsp;</A>&nbsp;
+<BR><A HREF="http://www.btc.gatech.edu/~bmck/EE6093/asnreqmt.html#asnmt1">Number
+Generators</A></TD>
+</TR>
+
+<TR>
+<TD><B>W2</B>, Mon 11 Jan 99</TD>
+
+<TD>2</TD>
+
+<TD>Review of Probability &amp;&nbsp;
+<BR>Random Processes&nbsp;
+<BR>(S.3.1 &amp; S.3.2 of notes&nbsp;
+<BR>and <A HREF="http://www.btc.gatech.edu/~bmck/EE6093/l2.ps">download
+notes</A>)</TD>
+
+<TD></TD>
+
+<TD></TD>
+</TR>
+
+<TR>
+<TD>Wed 13 Jan 99</TD>
+
+<TD>3</TD>
+
+<TD>Review of Transform Theory&nbsp;
+<BR>(Appendix I of notes,&nbsp;
+<BR><A HREF="http://www.btc.gatech.edu/~bmck/EE6093/l3.ps">download notes,</A>
+and&nbsp;
+<BR><A HREF="http://www.btc.gatech.edu/~bmck/EE6093/xforms.ps">reference
+sheets)</A></TD>
+
+<TD></TD>
+
+<TD><A HREF="http://www.btc.gatech.edu/~bmck/EE6093/asnreqmt.html#asnmt3">Vectors
+&amp; Matrices</A></TD>
+</TR>
+
+<TR>
+<TD><B>W3</B>, Wed 20 Jan 99</TD>
+
+<TD>4</TD>
+
+<TD>Intro. to Markov Processes&nbsp;
+<BR>(<A HREF="http://www.btc.gatech.edu/~bmck/EE6093/l4.ps">download notes</A>)</TD>
+
+<TD></TD>
+
+<TD><A HREF="http://www.btc.gatech.edu/~bmck/EE6093/asnreqmt.html#asnmt4">Numerical
+Resolution,&nbsp;</A>&nbsp;
+<BR><A HREF="http://www.btc.gatech.edu/~bmck/EE6093/asnreqmt.html#asnmt4">Statistic
+Accumulation,&nbsp;</A>&nbsp;
+<BR><A HREF="http://www.btc.gatech.edu/~bmck/EE6093/asnreqmt.html#asnmt4">and
+other issues</A></TD>
+</TR>
+
+<TR>
+<TD><B>W4</B>, Mon 25 Jan 99</TD>
+
+<TD>5</TD>
+
+<TD>Markovian Processes&nbsp;
+<BR>(S.3.3 &amp; S.3.4 of notes&nbsp;
+<BR>and <A HREF="http://www.btc.gatech.edu/~bmck/EE6093/l5.ps">download
+notes</A>)</TD>
+
+<TD><B><I><A HREF="http://www.btc.gatech.edu/~bmck/EE6093/preexam1.ps">Sample
+Exam 1</A></I></B></TD>
+
+<TD></TD>
+</TR>
+
+<TR>
+<TD>Wed 27 Jan 99</TD>
+
+<TD>6</TD>
+
+<TD>Flow Equations &amp;&nbsp;
+<BR>Markovian Queues&nbsp;
+<BR>(S.4.1-4.4 of notes and&nbsp;
+<BR><A HREF="http://www.btc.gatech.edu/~bmck/EE6093/l6.ps">download notes</A>)</TD>
+
+<TD><B><I>End of Exam 1</I></B>&nbsp;
+<BR><B><I>Material</I></B></TD>
+
+<TD><A HREF="http://www.btc.gatech.edu/~bmck/EE6093/asnreqmt.html#asnmt6">Output
+Analysis</A></TD>
+</TR>
+
+<TR>
+<TD><B>W5</B>, Mon 1 Feb 99</TD>
+
+<TD>7</TD>
+
+<TD>Markovian Queues&nbsp;
+<BR>(cont'd, S.4.5-4.8 and&nbsp;
+<BR><A HREF="http://www.btc.gatech.edu/~bmck/EE6093/l7.ps">download notes</A>)</TD>
+
+<TD><B><I><A HREF="http://www.btc.gatech.edu/~bmck/EE6093/exam1.ps">Exam
+1 Distributed</A></I></B></TD>
+
+<TD></TD>
+</TR>
+
+<TR>
+<TD>Wed 3 Feb 99</TD>
+
+<TD>8</TD>
+
+<TD>Markovian Queues&nbsp;
+<BR>(cont'd, S.4.9-4.11 and&nbsp;
+<BR><A HREF="http://www.btc.gatech.edu/~bmck/EE6093/l8.ps">download notes</A>)</TD>
+
+<TD><B><I>Exam 1 Due;</I></B>&nbsp;
+<BR><B><I>Last class&nbsp;</I></B>&nbsp;
+<BR><B><I>before Drop Day&nbsp;</I></B>&nbsp;
+<BR><B><I>(Fri 5 Feb 99)</I></B></TD>
+
+<TD><A HREF="http://www.btc.gatech.edu/~bmck/EE6093/asnreqmt.html#asnmt8">Single
+Queue&nbsp;</A>&nbsp;
+<BR><A HREF="http://www.btc.gatech.edu/~bmck/EE6093/asnreqmt.html#asnmt8">Simulations</A></TD>
+</TR>
+
+<TR>
+<TD>Fri 5 Feb 99</TD>
+
+<TD></TD>
+
+<TD></TD>
+
+<TD><B><I>Exam 1 Grades&nbsp;</I></B>&nbsp;
+<BR><B><I>Available;</I></B>&nbsp;
+<BR><B><I>Drop Day</I></B></TD>
+
+<TD></TD>
+</TR>
+
+<TR>
+<TD><B>W6</B>, Mon 8 Feb 99</TD>
+
+<TD>9</TD>
+
+<TD>M/G/1 &amp; G/M/1 Queues&nbsp;
+<BR>(Ch. 6 and <A HREF="http://www.btc.gatech.edu/~bmck/EE6093/l9.ps">download
+notes, revised</A>)</TD>
+
+<TD><B><I>Exam 1 Returned</I></B></TD>
+
+<TD></TD>
+</TR>
+
+<TR>
+<TD>Wed 10 Feb 99</TD>
+
+<TD>10</TD>
+
+<TD>Open Queueing Networks&nbsp;
+<BR>(Ch. 5 of notes and&nbsp;
+<BR><A HREF="http://www.btc.gatech.edu/~bmck/EE6093/l10.ps">download notes</A>)</TD>
+
+<TD></TD>
+
+<TD><A HREF="http://www.btc.gatech.edu/~bmck/EE6093/asnreqmt.html#asnmt10">Sparse
+Matrix&nbsp;</A>&nbsp;
+<BR><A HREF="http://www.btc.gatech.edu/~bmck/EE6093/asnreqmt.html#asnmt10">Implementations</A></TD>
+</TR>
+
+<TR>
+<TD><B>W7</B>, Mon 15 Feb 99</TD>
+
+<TD>11</TD>
+
+<TD>Open Queueing Networks&nbsp;
+<BR>(Examples in class)</TD>
+
+<TD><B><I>Exam 1 Grades</I></B>&nbsp;
+<BR><B><I>Binding;</I></B>&nbsp;
+<BR><B><I><A HREF="http://www.btc.gatech.edu/~bmck/EE6093/preexam2.ps">Sample
+Exam 2</A></I></B></TD>
+
+<TD></TD>
+</TR>
+
+<TR>
+<TD>Wed 17 Feb 99</TD>
+
+<TD>12</TD>
+
+<TD>Closed Queueing Networks&nbsp;
+<BR>(<A HREF="http://www.btc.gatech.edu/~bmck/EE6093/l12.ps">download notes</A>)</TD>
+
+<TD><B><I>End of Exam 2</I></B>&nbsp;
+<BR><B><I>Material</I></B></TD>
+
+<TD><A HREF="http://www.btc.gatech.edu/~bmck/EE6093/asnreqmt.html#asnmt12">Networks
+&amp; Graphs</A></TD>
+</TR>
+
+<TR>
+<TD><B>W8</B>, Mon 22 Feb 99</TD>
+
+<TD>13</TD>
+
+<TD>Closed Queueing Networks&nbsp;
+<BR>(Examples in class)</TD>
+
+<TD><B><I><A HREF="http://www.btc.gatech.edu/~bmck/EE6093/exam2.ps">Exam
+2 Distributed</A></I></B>&nbsp;</TD>
+
+<TD></TD>
+</TR>
+
+<TR>
+<TD>Wed 24 Feb 99</TD>
+
+<TD>14</TD>
+
+<TD>ALOHA Networks&nbsp;
+<BR>(<A HREF="http://www.btc.gatech.edu/~bmck/EE6093/l14.ps">download notes</A>)</TD>
+
+<TD><B><I>Exam 2 Due</I></B></TD>
+
+<TD></TD>
+</TR>
+
+<TR>
+<TD><B>W9</B>, Mon 1 Mar 99</TD>
+
+<TD>15</TD>
+
+<TD>Token Ring Networks&nbsp;
+<BR>(<A HREF="http://www.btc.gatech.edu/~bmck/EE6093/l15.ps">download notes</A>)</TD>
+
+<TD><B><I>Exam 2 Returned;</I></B>&nbsp;
+<BR><B><I><A HREF="http://www.btc.gatech.edu/~bmck/EE6093/preexam3.ps">Sample
+Exam 3</A></I></B></TD>
+
+<TD><A HREF="http://www.btc.gatech.edu/~bmck/EE6093/asnreqmt.html#asnmt15">Network
+Simulations</A></TD>
+</TR>
+
+<TR>
+<TD>Wed 3 Mar 99</TD>
+
+<TD>16</TD>
+
+<TD>Traffic Characterization&nbsp;
+<BR>(discuss "A Comparison of Three Methods&nbsp;
+<BR>of Estimation for Approximating General&nbsp;
+<BR>Distributions by a Coxian Distribution" by&nbsp;
+<BR>Khoshgoftaar &amp; Perros)</TD>
+
+<TD></TD>
+
+<TD></TD>
+</TR>
+
+<TR>
+<TD>Fri 5 Mar 99</TD>
+
+<TD></TD>
+
+<TD></TD>
+
+<TD><B><I>(<A HREF="#grades">Optional</A>)</I></B>&nbsp;
+<BR><B><I><A HREF="http://www.btc.gatech.edu/~bmck/EE6093/exam3.ps">Exam
+3 Distributed</A></I></B></TD>
+
+<TD></TD>
+</TR>
+
+<TR>
+<TD><B>W10</B>, Mon 8 Mar 99</TD>
+
+<TD>17</TD>
+
+<TD>Basic Switch Models&nbsp;
+<BR>(discuss "Performance Modelling of a&nbsp;
+<BR>Multi-Buffered Banyan Switch Under&nbsp;
+<BR>Bursty Traffic" by Morris &amp; Perros)</TD>
+
+<TD><B><I>Exam 2 Grades</I></B>&nbsp;
+<BR><B><I>Binding;&nbsp;</I></B>&nbsp;
+<BR><B><I>End of Exam 3</I></B>&nbsp;
+<BR><B><I>Material</I></B></TD>
+
+<TD></TD>
+</TR>
+
+<TR>
+<TD>Wed 10 Mar 99</TD>
+
+<TD>18</TD>
+
+<TD>Optical Networks&nbsp;
+<BR>(download papers by&nbsp;
+<BR><A HREF="ftp://ftp.csc.ncsu.edu/pub/eos_users/r/rouskas/Ar0ra/Journals/PE98.ps.gz">McKinnon,
+Rouskas, &amp; Perros</A> and&nbsp;
+<BR><A HREF="ftp://www.csc.ncsu.edu/pub/eos_users/r/rouskas/Ar0ra/TechReports/TR97-11.ps.gz">McKinnon,
+Perros, &amp; Rouskas</A>)</TD>
+
+<TD><B><I>(<A HREF="#grades">Optional</A>)</I></B>&nbsp;
+<BR><B><I>Exam 3 Due</I></B></TD>
+
+<TD><A HREF="http://www.btc.gatech.edu/~bmck/EE6093/asnreqmt.html#asnmt18"></A></TD>
+</TR>
+
+<TR>
+<TD>Fri 12 Mar 99</TD>
+
+<TD></TD>
+
+<TD></TD>
+
+<TD><B><I>(<A HREF="#grades">Optional</A>)</I></B>&nbsp;
+<BR><B><I>Exam 3 Grades&nbsp;</I></B>&nbsp;
+<BR><B><I>Available</I></B></TD>
+
+<TD></TD>
+</TR>
+
+<TR>
+<TD><B>W11</B>, Fri 19 Mar 99 @ 8a</TD>
+
+<TD></TD>
+
+<TD></TD>
+
+<TD><B><I>(<A HREF="#grades">Optional</A>)</I></B>&nbsp;
+<BR><B><I>Final Exam</I></B></TD>
+
+<TD></TD>
+</TR>
+</TABLE>
+
+<HR>
+<BR>Last Modified Fri Mar&nbsp; 5 17:27:04 EST 1999&nbsp;
+<BR>Report problems to <I><A HREF="mailto:b.mckinnon@ieee.org">b.mckinnon@ieee.org</A></I>
+</BODY>
+</HTML>
